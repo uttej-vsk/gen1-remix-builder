@@ -9,6 +9,9 @@ declare module "@remix-run/node" {
 }
 
 export default defineConfig({
+  ssr: {
+    noExternal: ["@builder.io/react"],
+  },
   plugins: [
     remix({
       future: {
